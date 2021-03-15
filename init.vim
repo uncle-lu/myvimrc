@@ -52,12 +52,10 @@ endfunc
 "C++  medol
 function Cppmodel() 
   "Shortcut key mapping
-  packadd termdebug
   set mp=g++\ %\ -std=c++11\ -o\ %<\ -g\ -Wall\ -Wshadow\ -Wextra
   map \ll :w<CR>:mak<CR>:let g:qf=0<CR>:call Qf()<CR><C-w><C-k><C-w><C-k>
-  map \lv :!%<<CR>
-  map \lb :Termdebug %< <CR><c-w>L
-  map s :Step<CR>
+  map \lv :!./%<<CR>
+  map \lb :Termdbg lldb %< <CR><c-w>H
   inoremap ' ''<ESC>i
   inoremap " ""<ESC>i
   inoremap ( ()<ESC>i
@@ -69,12 +67,10 @@ endfunction
 "C medol
 function Cmodel() 
   "Shortcut key mapping
-  packadd termdebug
   set mp=gcc\ %\ -o\ %<\ -g\ -Wall\ -Wshadow\ -Wextra
   map \ll :w<CR>:mak<CR>:let g:qf=0<CR>:call Qf()<CR><C-w><C-k><C-w><C-k>
-  map \lv :!%<<CR>
-  map \lb :Termdebug %< <CR><c-w>L
-  map s :Step<CR>
+  map \lv :!./%<<CR>
+  map \lb :Termdbg lldb %< <CR><c-w>H
   inoremap ' ''<ESC>i
   inoremap " ""<ESC>i
   inoremap ( ()<ESC>i
@@ -90,6 +86,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-startify'
 Plug 'majutsushi/tagbar'
+Plug 'epheien/termdbg'
 "Plug 'vim-latex/vim-latex'
 call plug#end()
 
