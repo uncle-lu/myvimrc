@@ -11,13 +11,13 @@ set mouse=a
 set belloff=all
  
 "gvim
-set gfn=Consolas:h15:cANSI:qDRAFT
-set guioptions-=T
-set guioptions-=m
-set guioptions-=L
-set guioptions-=r
-set guioptions-=b 
-autocmd GUIEnter * simalt ~x
+"set gfn=Consolas:h15:cANSI:qDRAFT
+"set guioptions-=T
+"set guioptions-=m
+"set guioptions-=L
+"set guioptions-=r
+"set guioptions-=b 
+"autocmd GUIEnter * simalt ~x
 
 "Chinese
 set fileencoding=utf-8
