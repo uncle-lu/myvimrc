@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
-let g:netrw_dirhist_7='/Users/uncle-lu/.vim/plugged/nerdtree/.github'
-let g:netrw_dirhist_6='/Users/uncle-lu/Documents/写作/blog/source'
-let g:netrw_dirhist_5='/Users/uncle-lu/Documents/写作/blog/source/_posts'
-let g:netrw_dirhist_4='/Users/uncle-lu/projects/study_react/part1/src'
-let g:netrw_dirhist_3='/Users/uncle-lu/projects/bing/detectron2/projects/PointRend/configs'
-let g:netrw_dirhist_2='/Users/uncle-lu/projects'
-let g:netrw_dirhist_1='/Users/uncle-lu/.vim'
